@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="auth-container">
+        <div class="form-container" id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="form-container" id="registration-container">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="text" id="whatsapp" placeholder="WhatsApp Number" required>
+                <input type="text" id="instagram" placeholder="Instagram Profile" required>
+                <textarea id="about" placeholder="About You" required></textarea>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="dashboard-container" id="dashboard-container">
+        <h1>Welcome, <span id="user-name"></span></h1>
+        <div class="sidebar">
+            <ul>
+            <button id="dashboard-btn">Dashboard</button>
+            <button id="profile-btn">Profile</button>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="dashboard-content" class="active"><h1>Welcome to your dashboard!</h1></div>
+            <div id="profile-content">
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>WhatsApp:</strong> <span id="profile-whatsapp"></span></p>
+                <p><strong>Instagram:</strong> <span id="profile-instagram"></span></p>
+                <p><strong>About:</strong> <span id="profile-about"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
